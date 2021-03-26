@@ -105,12 +105,13 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
 
   .hobbies > img{
     border: 7.5px #9ab6c1 solid;
     margin: 10px;
-    width: 250px;
+    width: 200px;
     box-shadow: 10px 10px #c9d1d4;
   }
 
