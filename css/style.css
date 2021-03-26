@@ -102,10 +102,11 @@ body{
 
   .hobbies{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-basis: 200px;
   }
 
   .hobbies > img{
