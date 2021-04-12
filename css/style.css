@@ -1,0 +1,446 @@
+/*Begin your code here*/
+/*Requirement 1*/
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16pt;
+    font-family: "Noto Sans JP", sans-serif;
+    background: url(../images/portfoliobackground.jpeg); 
+    box-sizing: border-box;
+  }
+
+  h1{
+    font-size: 2em;
+    text-align: center;
+    line-height: 2;
+  }
+  
+  h2{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  p {
+    padding: 30px 30px;
+    text-align: center;
+    line-height: normal;
+  }
+
+  .skip-to-content-link {
+    left: 50%;
+    position: absolute;
+    transform: translateY(-100%);
+  }
+
+  .skip-to-content-link {
+    background: #6e8088;
+    height: 30px;
+    left: 20%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+  }
+  
+  .skip-to-content-link:focus {
+    transform: translateY(0%);
+  }
+
+  #navposition{
+      font-weight: bold;
+      background-color: #bbd9e6;
+      font-size: 18pt;
+  }
+
+  .nav_item a:hover, a:focus{
+    color: #ffffff;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+  }
+
+  .nav_links{
+    width:100%;
+  }
+
+  *:focus{
+    border: 2px solid white;
+  }
+
+  a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+
+  header{
+    background: #caeaf7;
+    border-bottom: 3px solid #9ab6c1 ;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .nav_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: normal;
+  }
+
+  .nav_item a{
+    color: black;
+    text-decoration: none;
+  }
+  
+  #logo{
+    display: block;
+    width: 75px;
+  }
+
+  .self > img{
+      display: block;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 30px;
+  }
+
+  .hobbies{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 200px;
+  }
+
+  .hobbies > img{
+    border: 7.5px #9ab6c1 solid;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 10px 10px #c9d1d4;
+  }
+
+  .hobbies h3 {
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 30px;
+  }
+
+  .family h2, .friends h2{
+      font-size: 50px;
+      padding-top: 20px;
+  }
+  .family p, .friends p{
+      line-height: normal;
+      font-size: 15px;
+  }
+
+  .familyimages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .familyimages > img{
+    border: 7.5px #9ab6c1 solid;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 10px 10px #c9d1d4;
+  }
+
+  .friendimages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .friendimages > img{
+    border: 7.5px #9ab6c1 solid;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 10px 10px #c9d1d4;
+  }
+
+  /*schoollife code*/
+
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-auto-rows: max(50px, auto);
+    grid-row-gap: 30px;
+  }
+
+  .text {
+    background-color: rgb(154, 182, 193, 0.8);
+    padding: 5px;
+    align-self: center;
+    border: 4px solid whitesmoke;
+    /*Your code here:*/
+  }
+
+  .text > p{
+    line-height: normal;
+    font-size: 17px;
+    /*Your code here:*/
+  } 
+
+  .blueprints, .tedx, .clubtennis{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    /*Your Code Here*/
+  }
+
+  .mecc, .pct{
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    /*Your Code Here*/
+  }
+
+  .blueprints-logo, .mecc-logo, .tedx-logo, .clubtennis-image, .pct-image{
+    grid-column: 1/-1;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    max-height: 500px;
+    /*Your Code Here*/
+  
+  }
+  
+  .blueprints, .blueprints-logo{
+    grid-row-start: 1;
+    grid-row-end: span 1;
+  
+  }
+  
+  .mecc, .mecc-logo{
+    grid-row-start: 2;
+    grid-row-end: span 1;
+  
+  }
+  
+  .tedx, .tedx-logo{
+    grid-row-start: 3;
+    grid-row-end: span 1;
+  
+  }
+  
+  .clubtennis, .clubtennis-image{
+    grid-row-start: 5;
+    grid-row-end: span 1;
+  }
+
+  .pct, .pct-image{
+    grid-row-start: 4;
+    grid-row-end: span 1;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #9ab6c1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #9ab6c1;
+  }
+  
+  .contact_container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin: 20px;
+  }
+  
+  /* Instagram */
+  .fa-instagram {
+    background: #9ab6c1;
+    color: white;
+    margin: 20px;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    margin: 20px;
+  }
+
+  @media screen and (min-width: 850px){
+  
+    /*Requirement 10*/
+    header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      /*Your code here again.*/  
+    }
+  
+    /*Requirement 10*/
+    .nav_links{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      width: 100%;
+      /*Your code here again.*/  
+    }
+
+    .nav_item{
+      padding: 0px 20px;
+    }
+
+    .blueprints, .tedx, .clubtennis{
+      grid-column-start: 1;
+      grid-column-end: span 2;
+      /*Your Code Here*/
+    }
+  
+    .mecc, .pct{
+      grid-column-start: 2;
+      grid-column-end: span 1;
+      /*Your Code Here*/
+    }
+
+    .blueprints-logo, .tedx-logo, .clubtennis-image{
+      grid-column: 1/-1;
+      width: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      max-height: 500px;
+      /*Your Code Here*/
+    
+    }
+
+    .mecc-logo, .pct-image{
+      grid-column-start: 2;
+      grid-column-end: span 1;
+      width: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      max-height: 500px;
+      /*Your Code Here*/
+    
+    }
+  
+  }
+  
+  /*Requirement 12*/
+  /*Add media query to handle reduced-motion*/
+  /*Your code here again.*/ 
+  @media (prefers-reduced-motion: reduce) {
+    #logo {
+      animation: none;
+    }
+  }
+  
+  
+  @media print { 
+    body{
+      background: none;
+    }
+    nav{
+      width: 100%;
+    }
+    .nav_links{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      /*Your code here again.*/
+    }
+  
+    .price{
+      min-height: 500px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      flex-grow: 1;
+  
+    }
+      .package {
+        border: 2px solid #45ADAD;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 200px;
+        /*Your code here again.*/
+      } 
+      .gallery{
+        display: none;
+      }
+  
+      #gallery{
+        display: none;
+      }
+      /*Your code here*/
+      /*You must use flex.
+      /*Don't forget to vertically and horizontally 
+      align the element*/
+  }
+  
+  
+    /*Requirement 13*/
+    /*Requirement 14*/
+    /*Requirement 15*/
+    /*Requirement 16*/
+    /*Requirement 17*/
+    /*Requirement 18*/
+   
+  
+  
