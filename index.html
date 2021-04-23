@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans JP">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <a class="skip-to-content-link" href="#image11">
+    <script src="animation.js"></script>
+    <a class="skip-to-content-link" href="#hobbies">
       Skip to content
     </a>
   </head>
@@ -26,18 +27,22 @@
     </nav>
   </header>
   <main>
-    <div class="typewriter">
-      <h1>Hi I'm Sahaja</h1>
-    </div>
-    <p>Welcome to my page.</p>
-    <div class="self"> 
-      <img id="image11" src="images/portfolioselfimage.jpg" alt="" />
+    <div class="parallax2"></div>
+    <div class="fade-in-text">
+      <h1>Sahaja Pinnu</h1>
+      <h2>I am
+        <span
+           class="txt-rotate"
+           data-period="2000"
+           data-rotate='[ "19.", "a BBA & BSI student.", "a tennis player.", "a creator.", "a sleep addict." ]'></span>
+      </h2>
+      
     </div>
 
-    <h2>Interests</h2>
-    </div>
-    <p>Some of my hobbies include...</p>
-    <div class="hobbies"> 
+    <div class="parallax2"></div>
+
+    <h2>A Little Bit About Me</h2>
+    <div class="hobbies" id="hobbies"> 
       <h3>Playing Tennis</h3>
       <img id="image22" src="images/hobbytennis.jpeg" alt="" />
       <h3>Public Speaking</h3>
@@ -45,8 +50,48 @@
       <h3>Trying New Food</h3>
       <img id="image44" src="images/hobbyfood.JPG" alt="" />
     </div>
+  </div>
+
+  <div class="parallax2"></div>
+
+    <h2>Fun Facts About Me!</h2>
+    <div class="fun_fact">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p>If I had to describe myself as a fruit, I would be a...</p> 
+          </div>
+          <div class="flip-card-back">
+            <h1>A Pineapple!</h1>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p>I've never watched...</p> 
+          </div>
+          <div class="flip-card-back">
+            <h1>The Lion King!</h1>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p>When I get really nervous, this part of my body goes numb...</p> 
+          </div>
+          <div class="flip-card-back">
+            <h1>My left arm!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </main>
 
+  
+  <div class="parallax2"></div>
     <footer>
       <p>University of Michigan School of Information <br/>
         &copy; Sahaja Pinnu SI 339</p>
